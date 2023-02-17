@@ -6,13 +6,13 @@
 
 режим репликации master-master отличен от master-slave тем что в режиме master-master можно писать информацию на оба master`a, а в режиме master-slave инфрмацию пишет на master, а slave реплицирует на себя информацию (можно с него только считывать информацию).
 
----
 
 ### Задание 2
 
 Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
----
+```
+
 master server:
 
 mysql> SHOW TABLES;
@@ -96,4 +96,5 @@ Master_SSL_Verify_Server_Cert: No
         Get_master_public_key: 0
             Network_Namespace: 
 1 row in set, 1 warning (0.01 sec)
----
+
+```
